@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Modern Web App - Demo</title>
-    <meta
-      name="description"
-      content="A Demo Web App for accessible & modern web development"
-    />
-    <meta name="author" content="rhawk117" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Style Sheets & Imports -->
-    <link rel="stylesheet" href="..\static\css\style.css" />
-    <!-- Font Awesome For Easy Icon Integration -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Font Used on Site  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="nav-bar">
-        <h1 class="page-heading">Hello World!</h1>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#resources">Resources</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-        </ul>
-        <button class="harmburger-menu" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section id="home" class="hero">
-        <h1>Modern Web App Accessibility and Styling Configurations</h1>
-        <h2>by <span id="author-name"></span></h2>
-        <a href="#resources" class="btn">Learn More</a>
-      </section>
-    </main>
-    <script src="..\static\js\script.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Modern Web App - Demo</title>
+  <meta name="description" content="A Demo Web App for accessible & modern web development" />
+  <meta name="author" content="rhawk117" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Style Sheets & Imports -->
+  <link rel="stylesheet" href="..\static\css\style.css" />
+  <!-- Font Awesome For Easy Icon Integration -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Font Used on Site  -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <h1 class="page-heading">Hello World!</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="harmburger-menu" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>Modern Web App Accessibility and Styling Configurations</h1>
+      <h2>by <span id="author-name"></span></h2>
+      <a href="#resources" class="btn">Learn More</a>
+    </section>
+    <section id="resources" class="card-section container">
+      <h2>Web Development Resources</h2>
+      <div class="card-grid">
+        <!-- html -->
+        <article class="card">
+          <i class="fab fa-html5" aria-hidden="true"></i>
+          <h3>HTML</h3>
+          <p>Learn about modern HTML techniques for accessibility.</p>
+          <a href="#" class="btn">Learn HTML</a>
+        </article>
+        <!-- css -->
+        <article class="card">
+          <i class="fab fa-css3-alt" aria-hidden="true"></i>
+          <h3>CSS</h3>
+          <p>Explore modern CSS techniques for responsive design.</p>
+          <a href="#" class="btn">Learn CSS</a>
+        </article>
+        <!-- js -->
+        <article class="card">
+          <i class="fab fa-js" aria-hidden="true"></i>
+          <h3>JavaScript</h3>
+          <p>Discover JavaScript best practices for interactivity.</p>
+          <a href="#" class="btn">Learn JavaScript</a>
+        </article>
+        <!-- frameworks -->
+        <article class="card">
+          <i class="fas fa-code-branch" aria-hidden="true"></i>
+          <h3>Frameworks</h3>
+          <p>Explore modern frameworks for building web apps.</p>
+          <a href="#" class="btn">Discover Frameworks</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="..\static\js\script.js"></script>
+</body>
 </html>
