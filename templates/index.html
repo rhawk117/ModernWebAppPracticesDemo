@@ -15,59 +15,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <nav class="nav-bar">
-      <h1 class="page-heading">Accessible Web Design</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-      <button class="harmburger-menu" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="hero">
-      <h1>Modern Web App Accessibility and Styling Configurations</h1>
-      <h2>by <span id="author-name"></span></h2>
-      <a href="#resources" class="btn">Learn More</a>
-    </section>
-    <section id="resources" class="card-section container">
-      <h2>Web Development Resources</h2>
-      <div class="card-grid">
-        <!-- html -->
-        <article class="card">
-          <i class="fab fa-html5" aria-hidden="true"></i>
-          <h3>HTML</h3>
-          <p>Learn about modern HTML techniques for accessibility.</p>
-          <a href="#" class="btn">Learn HTML</a>
-        </article>
-        <!-- css -->
-        <article class="card">
-          <i class="fab fa-css3-alt" aria-hidden="true"></i>
-          <h3>CSS</h3>
-          <p>Explore modern CSS techniques for responsive design.</p>
-          <a href="#" class="btn">Learn CSS</a>
-        </article>
-        <!-- js -->
-        <article class="card">
-          <i class="fab fa-js" aria-hidden="true"></i>
-          <h3>JavaScript</h3>
-          <p>Discover JavaScript best practices for interactivity.</p>
-          <a href="#" class="btn">Learn JavaScript</a>
-        </article>
-        <!-- frameworks -->
-        <article class="card">
-          <i class="fas fa-code-branch" aria-hidden="true"></i>
-          <h3>Frameworks</h3>
-          <p>Explore modern frameworks for building web apps.</p>
-          <a href="#" class="btn">Discover Frameworks</a>
-        </article>
-      </div>
-    </section>
-  </main>
+      <header>
+        <nav class="container">
+            <h1>Modern Web App</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Modern Web App Accessibility and Styling Configurations</h1>
+            <h2>by <span id="author-name"></span></h2>
+            <a href="#resources" class="btn">Learn More</a>
+        </section>
+
+        <section id="resources" class="card-section container">
+            <h2>Web Development Resources</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
+                    <h3>HTML</h3>
+                    <p>Learn about modern HTML techniques for accessibility.</p>
+                    <a href="#" class="btn">Learn HTML</a>
+                </article>
+                <article class="card">
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                    <h3>CSS</h3>
+                    <p>Explore modern CSS techniques for responsive design.</p>
+                    <a href="#" class="btn">Learn CSS</a>
+                </article>
+                <article class="card">
+                    <i class="fab fa-js" aria-hidden="true"></i>
+                    <h3>JavaScript</h3>
+                    <p>Discover JavaScript best practices for interactivity.</p>
+                    <a href="#" class="btn">Learn JavaScript</a>
+                </article>
+                <article class="card">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    <h3>Frameworks</h3>
+                    <p>Explore modern frameworks for building web apps.</p>
+                    <a href="#" class="btn">Discover Frameworks</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dark Mode Slider -->
+    <div class="mode-toggle">
+        <div class="dark-mode-toggle" aria-label="Toggle dark mode" role="switch" aria-checked="false">
+            <div class="toggle-ball"></div>
+        </div>
+    </div>
+    <canvas id="animated-bg"></canvas>
   <script src="..\static\js\script.js"></script>
 </body>
 </html>
