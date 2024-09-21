@@ -1,0 +1,58 @@
+/* 
+    Generic Global Styles for Modern Web Apps
+        author: rhawk117
+*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* root variables make using a theme seemless*/
+:root {
+    --font-color: #333;
+    --background-color: #f4f4f9;
+    --link-color: #1a73e8;
+    --font-family: 'Roboto', sans-serif;
+    --line-height: 1.6;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic body styles for any app */
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+    background-color: var(--background-color);
+    line-height: var(--line-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word; /* prevent text overflow */ 
+    /* better font rendering */
+    -webkit-font-smoothing: antialiased;  
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* anchor tag styles */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
