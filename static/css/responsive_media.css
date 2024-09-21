@@ -1,0 +1,88 @@
+
+/* 
+    Responsive Media
+*/
+
+
+/* 
+    Responsive Images
+    Ensure that images scale within their container while maintaining 
+    their aspect ratio.
+    - The 'max-width: 100%' ensures that images do not overflow 
+      their containers. 
+
+    - The 'height: auto' makes sure they maintain their aspect ratio.
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 
+    Video Container for Responsive Aspect Ratio (16:9) 
+    Use padding-bottom trick to maintain aspect ratio, where 56.25% is the ratio for 16:9 videos.
+    The iframe or video inside this container will fill the entire space.
+*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    Iframe Container for Responsive Aspect Ratio (16:9)
+    Similar to videos, use padding-bottom trick to maintain the 
+    aspect ratio of iframes. This ensures the iframe scales properly
+    across devices.
+*/
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* 
+    Media Queries for Fine Control Over Media Elements
+    Example media query that ensures media (images, videos, etc.) 
+    take full width on small screens.
+*/
+
+@media (max-width: 768px) {
+    .media {
+        width: 100%;
+    }
+}
+
+/*
+    General Utility Classes for Responsive Elements
+    You can use these classes for any media elements to ensure responsiveness.
+    Applying width: 100% ensures the element will fit its container.
+*/
+.responsive-media {
+    width: 100%;
+    height: auto;
+}
